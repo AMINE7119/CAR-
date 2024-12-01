@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.faq-text-logo {
+position: absolute;
+top: 20px;
+left: 20px;
+font-size: 54px;
+font-weight: bold;
+color: #333;
+z-index: 10;
+font-family: 'Roboto', sans-serif;
+}
+
+.faq-text-logo .orange-text {
+color: #ff6a00;
+}
+
+.faq-section {
+    padding: 40px 20px;
+}
+
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.faq-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.faq-questions {
+    flex: 1 1 600px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-label {
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.faq-label:hover {
+    background-color: #f9f9f9;
+    color: #ff6a00;
+}
+
+.faq-toggle {
+    display: none;
+}
+
+.faq-toggle:checked + .faq-label + .faq-answer {
+    display: block;
+}
+
+.faq-answer {
+    display: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    background: #f9f9f9;
+    border-left: 3px solid #ff6a00;
+}
+
+.faq-image {
+    flex: 1 1 300px;
+    position: relative;
+    text-align: center;
+}
+
+.faq-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.faq-image img:hover {
+    transform: scale(1.05);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.orange-text {
+    color: #ff6a00;
+}
+
+.faq-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .faq-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
